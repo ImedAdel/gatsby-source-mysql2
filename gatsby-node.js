@@ -29,7 +29,7 @@ exports.sourceNodes = async (
 
     db.end();
   } catch (e) {
-    reporter.error(`Error while sourcing data with gatsby-source-mysql`, e);
+    reporter.error(`Error while sourcing data with gatsby-source-mysql2`, e);
     db.end();
   }
 };

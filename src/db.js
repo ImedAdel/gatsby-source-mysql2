@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 function query(dbConnection, statement, reporter) {
   return new Promise((fulfill, reject) => {

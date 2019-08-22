@@ -1,6 +1,6 @@
-# gatsby-source-mysql
+# gatsby-source-mysql2
 
-[![version](https://img.shields.io/npm/v/gatsby-source-mysql.svg)](https://www.npmjs.com/package/gatsby-source-mysql) ![license](https://img.shields.io/npm/l/gatsby-source-mysql.svg)
+[![version](https://img.shields.io/npm/v/gatsby-source-mysql2.svg)](https://www.npmjs.com/package/gatsby-source-mysql2) ![license](https://img.shields.io/npm/l/gatsby-source-mysql2.svg)
 
 Source plugin for pulling data into Gatsby from MySQL database.
 
@@ -11,7 +11,7 @@ Source plugin for pulling data into Gatsby from MySQL database.
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-source-mysql`,
+      resolve: `gatsby-source-mysql2`,
       options: {
         connectionDetails: {
           host: 'localhost',
@@ -62,7 +62,7 @@ When you have multiple queries, add another item in the `queries` option with di
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-source-mysql`,
+      resolve: `gatsby-source-mysql2`,
       options: {
         connectionDetails: {
           host: 'localhost',
@@ -100,7 +100,7 @@ It's possible to join the results of the queries by providing `parentName`, `for
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-source-mysql`,
+      resolve: `gatsby-source-mysql2`,
       options: {
         connectionDetails: {
           host: 'localhost',
@@ -183,7 +183,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-mysql`,
+      resolve: `gatsby-source-mysql2`,
       options: {
         connectionDetails: {
           host: 'localhost',
@@ -263,6 +263,6 @@ If you have multiple columns with image url, pass down multiple values to `remot
 | `cardinality`           | Optional  | the relationship between the parent and this entity. Possible values: `"OneToMany"`, `"OneToOne"`. Default to `"OneToMany"`. (Note: many-to-many relationship is currently not supported.) |
 | `remoteImageFieldNames` | Optional  | columns that contain image url which you want to download and utilize Gatsby image processing capability.                                                                                  |
 
-[raise-issue]: https://github.com/malcolm-kee/gatsby-source-mysql/issues/new
+[raise-issue]: https://github.com/ImedAdel/gatsby-source-mysql2/issues/new
 [gatsby-plugin-sharp]: https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/
 [gatsby-transformer-sharp]: https://www.gatsbyjs.org/packages/gatsby-transformer-sharp/
